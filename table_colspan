@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Contoh Aplikasi Colspan</h2>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Lockey</td>
+    <td>Irawan</td>
+    <td>35</td>
+  </tr>
+  <tr>
+    <td>Naomi</td>
+    <td>Jessica</td>
+    <td>9</td>
+  </tr>
+</table>
+
+</body>
+</html>
