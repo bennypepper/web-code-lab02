@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Details</title>
+</head>
+<body>
+
+    <h2>Employee Details</h2>
+    
+    <form>
+        <h3>01. Personal Information</h3>
+        <table cellpadding="5">
+            <tr>
+                <td><label>Employee Name</label></td>
+                <td>
+                    <input type="text" placeholder="First Name" size="20">
+                    <input type="text" placeholder="Last Name" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Starting Date</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Birth Date</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>Employee Type</label></td>
+                <td>
+                    <select>
+                        <option>Select</option>
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Contract</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Position</label></td>
+                <td><input type="text" size="45"></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h3>02. Location</h3>
+        <table cellpadding="5">
+            <tr>
+                <td>
+                    <label>City</label><br>
+                    <input type="text" placeholder="City" size="25">
+                </td>
+                <td>
+                    <label>State</label><br>
+                    <input type="text" placeholder="State" size="25">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>ZIP</label><br>
+                    <input type="text" placeholder="ZIP" size="25">
+                </td>
+                <td>
+                    <label>Address</label><br>
+                    <input type="text" placeholder="Address" size="25">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h3>03. Contact Information</h3>
+        <table cellpadding="5">
+            <tr>
+                <td>
+                    <label>Phone</label><br>
+                    <input type="tel" placeholder="Phone" size="25">
+                </td>
+                <td>
+                    <label>Email</label><br>
+                    <input type="email" placeholder="Email" size="25">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Register" style="padding: 10px 30px;">
+    </form>
+
+</body>
+</html>
