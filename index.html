@@ -13,7 +13,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- Tailwind CSS (CDN for standalone HTML) -->
+    <!-- Tailwind CSS  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -175,20 +175,20 @@
 
     </main>
 
-    <!-- Vanilla JS Intersection Observer for Scroll Animations -->
+    <!-- Vanilla JS  Scroll Animations -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.15 // Triggers when 15% of the element is visible
+                threshold: 0.15 
             };
 
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Run animation only once
+                        observer.unobserve(entry.target); 
                     }
                 });
             }, observerOptions);
