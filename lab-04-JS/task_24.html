@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 24</title></head>
+<body>
+<script>
+    let choices = ["batu", "gunting", "kertas"];
+    let userWins = 0;
+    let computerWins = 0;
+
+    for (let i = 0; i < 3; i++) {
+        let userChoice = prompt("Pilih batu, gunting, atau kertas:");
+        let computerChoice = choices[Math.floor(Math.random() * 3)];
+        
+        if (userChoice == computerChoice) {
+            console.log("User " + userChoice + " Vs Computer " + computerChoice + " = Draw");
+        } else if (
+            (userChoice == "batu" && computerChoice == "gunting") ||
+            (userChoice == "gunting" && computerChoice == "kertas") ||
+            (userChoice == "kertas" && computerChoice == "batu")
+        ) {
+            console.log("User " + userChoice + " Vs Computer " + computerChoice + " = User Wins");
+            userWins++;
+        } else {
+            console.log("User " + userChoice + " Vs Computer " + computerChoice + " = Computer Wins");
+            computerWins++;
+        }
+    }
+
+    if (userWins > computerWins) {
+        console.log("User wins the game !");
+    } else if (computerWins > userWins) {
+        console.log("Computer wins the game !");
+    } else {
+        console.log("Game ends in a draw !");
+    }
+</script>
+</body>
+</html>

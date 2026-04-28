@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 38</title>
+</head>
+<body>
+    <h2>Create Account</h2>
+    <form id="accountForm">
+        <input type="text" id="firstName" placeholder="First Name"><br><br>
+        <input type="text" id="lastName" placeholder="Last Name"><br><br>
+        <select id="country">
+            <option value="Country 1">Country 1</option>
+            <option value="Country 2">Country 2</option>
+        </select><br><br>
+        <input type="email" id="email" placeholder="Email Address"><br><br>
+        <input type="text" id="phone" placeholder="Phone Number"><br><br>
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password"><br><br>
+        <input type="checkbox" id="terms"> Terms and Condition<br><br>
+        <button type="button" onclick="createAccount()">Create</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        function createAccount() {
+            let firstName = document.getElementById("firstName").value;
+            let lastName = document.getElementById("lastName").value;
+            let country = document.getElementById("country").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let terms = document.getElementById("terms").checked;
+
+            let resultDiv = document.getElementById("result");
+            let passMatch = (password === confirmPassword) ? "sama dengan" : "tidak sama dengan";
+
+            resultDiv.innerHTML = "First Name: " + firstName + "<br>" +
+                                  "Last Name: " + lastName + "<br>" +
+                                  "Country: " + country + "<br>" +
+                                  "Email: " + email + "<br>" +
+                                  "Phone: " + phone + "<br>" +
+                                  "Terms Checked: " + terms + "<br>" +
+                                  "Password " + passMatch + " Confirm Password";
+        }
+    </script>
+</body>
+</html>

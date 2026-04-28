@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 37</title></head>
+<body>
+    <input type="text" id="myInput" placeholder="Enter text">
+    <button onclick="showText()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function showText() {
+            let val = document.getElementById("myInput").value;
+            document.getElementById("output").innerText = val;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+    </head>
+    <body>
+        <div class="w3-container">
+            <h2>Monthly Report 2023</h2>
+            <input
+                class="w3-input w3-border w3-padding"
+                type="text"
+                placeholder="Search for Merk"
+                id="myInput"
+                onkeyup="myFunction()"
+            />
+            <br />
+            <table class="w3-table-all" id="myTable">
+                <tr>
+                    <th>No.</th>
+                    <th>Merk</th>
+                    <th>In Stock</th>
+                    <th>Sold</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>22</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>BYD</td>
+                    <td>15</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>5</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>VinFast</td>
+                    <td>17</td>
+                    <td>15</td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            function myFunction() {
+                var input, filter, table, tr, td, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[1];
+                    if (td) {
+                        var txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

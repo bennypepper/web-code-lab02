@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 21</title></head>
+<body>
+<script>
+    let pokemons = ["pikachu", "squirtle", "raichu", "lapras", "elekid", "greninja"];
+    let electric = "Electric type pokemon\n";
+    let water = "Water type pokemon\n";
+    
+    for (let i = 0; i < pokemons.length; i++) {
+        if (pokemons[i] == "pikachu" || pokemons[i] == "raichu" || pokemons[i] == "elekid") {
+            electric += "- " + pokemons[i] + "\n";
+        } else {
+            water += "- " + pokemons[i] + "\n";
+        }
+    }
+    console.log(electric);
+    console.log(water);
+</script>
+</body>
+</html>

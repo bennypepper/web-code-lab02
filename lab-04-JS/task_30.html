@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 30</title></head>
+<body>
+<script>
+    let fruits = [];
+    let input = prompt("Enter a fruit (or 'stop' to end):");
+    while (input !== "stop") {
+        fruits.push(input);
+        input = prompt("Enter a fruit (or 'stop' to end):");
+    }
+    
+    for (let i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+</script>
+</body>
+</html>
