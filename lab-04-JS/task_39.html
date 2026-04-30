@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 39 - Color Flipper</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        h1 {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Color: <span id="color">#FFFFFF</span></h1>
+    <button onclick="changeColor()">Click Me</button>
+
+    <script>
+        const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+        const colorSpan = document.getElementById("color");
+
+        function changeColor() {
+            let hexColor = "#";
+            for (let i = 0; i < 6; i++) {
+                hexColor += hex[Math.floor(Math.random() * hex.length)];
+            }
+            colorSpan.textContent = hexColor;
+            document.body.style.backgroundColor = hexColor;
+        }
+    </script>
+</body>
+</html>

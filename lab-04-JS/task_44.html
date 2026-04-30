@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 44 - Stopwatch</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: monospace;
+        }
+        #stopwatch {
+            font-size: 15vw;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            gap: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: white;
+        }
+        button:hover {
+            background-color: #666;
+        }
+        #startBtn { background-color: #28a745; }
+        #stopBtn { background-color: #dc3545; }
+        #resetBtn { background-color: #007bff; }
+    </style>
+</head>
+<body>
+    <div id="stopwatch">00:00:00.000</div>
+    <div class="controls">
+        <button id="startBtn" onclick="start()">Start</button>
+        <button id="stopBtn" onclick="stop()">Stop</button>
+        <button id="resetBtn" onclick="reset()">Reset</button>
+    </div>
+
+    <script>
+        let startTime = 0;
+        let elapsedTime = 0;
+        let timerInterval = null;
+
+        function updateDisplay() {
+            const time = elapsedTime + (startTime ? Date.now() - startTime : 0);
+            
+            const hours = Math.floor(time / 3600000);
+            const minutes = Math.floor((time % 3600000) / 60000);
+            const seconds = Math.floor((time % 60000) / 1000);
+            const milliseconds = time % 1000;
+
+            document.getElementById("stopwatch").textContent = 
+                `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}.${String(milliseconds).padStart(3, '0')}`;
+        }
+
+        function start() {
+            if (!timerInterval) {
+                startTime = Date.now();
+                timerInterval = setInterval(updateDisplay, 10);
+            }
+        }
+
+        function stop() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+                elapsedTime += Date.now() - startTime;
+                startTime = 0;
+            }
+        }
+
+        function reset() {
+            stop();
+            elapsedTime = 0;
+            updateDisplay();
+        }
+        
+        updateDisplay();
+    </script>
+</body>
+</html>

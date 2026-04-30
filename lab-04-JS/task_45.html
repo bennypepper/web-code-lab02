@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 45 - CAPTCHA</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .captcha-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .captcha-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .captcha-display img {
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="number"] {
+            padding: 10px;
+            font-size: 1rem;
+            width: 100px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="captcha-box">
+        <h2>Please solve the CAPTCHA</h2>
+        <div class="captcha-display" id="captcha-display">
+        </div>
+        <form onsubmit="verifyCaptcha(event)">
+            <input type="number" id="captcha-answer" required placeholder="Result">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        const numImages = [
+            "https://dummyimage.com/50x50/000/fff&text=0",
+            "https://dummyimage.com/50x50/000/fff&text=1",
+            "https://dummyimage.com/50x50/000/fff&text=2",
+            "https://dummyimage.com/50x50/000/fff&text=3",
+            "https://dummyimage.com/50x50/000/fff&text=4",
+            "https://dummyimage.com/50x50/000/fff&text=5",
+            "https://dummyimage.com/50x50/000/fff&text=6",
+            "https://dummyimage.com/50x50/000/fff&text=7",
+            "https://dummyimage.com/50x50/000/fff&text=8",
+            "https://dummyimage.com/50x50/000/fff&text=9"
+        ];
+        
+        let expectedAnswer = 0;
+
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10);
+            const num2 = Math.floor(Math.random() * 10);
+            const operators = ["+", "-"];
+            const operator = operators[Math.floor(Math.random() * operators.length)];
+
+            if (operator === "+") {
+                expectedAnswer = num1 + num2;
+            } else {
+                expectedAnswer = num1 - num2;
+            }
+
+            const display = document.getElementById("captcha-display");
+            display.innerHTML = `
+                <img src="${numImages[num1]}" alt="${num1}">
+                <span>${operator}</span>
+                <img src="${numImages[num2]}" alt="${num2}">
+                <span>=</span>
+            `;
+            
+            document.getElementById("captcha-answer").value = "";
+            document.getElementById("message").textContent = "";
+        }
+
+        function verifyCaptcha(event) {
+            event.preventDefault();
+            const userAnswer = parseInt(document.getElementById("captcha-answer").value);
+            const messageEl = document.getElementById("message");
+
+            if (userAnswer === expectedAnswer) {
+                messageEl.textContent = "CAPTCHA is VALID!";
+                messageEl.style.color = "green";
+            } else {
+                messageEl.textContent = "CAPTCHA is INVALID!";
+                messageEl.style.color = "red";
+            }
+        }
+
+        generateCaptcha();
+    </script>
+</body>
+</html>

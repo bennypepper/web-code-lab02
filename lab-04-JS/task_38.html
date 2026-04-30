@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Task 38</title>
 </head>
+
 <body>
     <h2>Create Account</h2>
     <form id="accountForm">
@@ -14,6 +16,7 @@
         </select><br><br>
         <input type="email" id="email" placeholder="Email Address"><br><br>
         <input type="text" id="phone" placeholder="Phone Number"><br><br>
+
         <input type="password" id="password" placeholder="Password"><br><br>
         <input type="password" id="confirmPassword" placeholder="Confirm Password"><br><br>
         <input type="checkbox" id="terms"> Terms and Condition<br><br>
@@ -36,13 +39,14 @@
             let passMatch = (password === confirmPassword) ? "sama dengan" : "tidak sama dengan";
 
             resultDiv.innerHTML = "First Name: " + firstName + "<br>" +
-                                  "Last Name: " + lastName + "<br>" +
-                                  "Country: " + country + "<br>" +
-                                  "Email: " + email + "<br>" +
-                                  "Phone: " + phone + "<br>" +
-                                  "Terms Checked: " + terms + "<br>" +
-                                  "Password " + passMatch + " Confirm Password";
+                "Last Name: " + lastName + "<br>" +
+                "Country: " + country + "<br>" +
+                "Email: " + email + "<br>" +
+                "Phone: " + phone + "<br>" +
+                "Terms Checked: " + terms + "<br>" +
+                "Password " + passMatch + " Confirm Password";
         }
     </script>
 </body>
+
 </html>
