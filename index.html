@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurnal Pemrograman - Benedict Michael Pepper</title>
-    
-   
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-  
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -36,20 +37,19 @@
     </script>
 
     <style>
-        /* Base brutalist styles */
         body {
             background-color: var(--bgwarm);
             color: var(--primary);
         }
-        
-        /* Glassmorphism for Navbar */
+
+
         .glass-nav {
             background: rgba(234, 224, 207, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
 
-        /* Interactive Neo-Brutalist elements */
+
         .brutal-card {
             border: 2px solid #213448;
             box-shadow: 4px 4px 0px #94B4C1;
@@ -64,7 +64,7 @@
             transition: all 0.15s ease-in-out;
         }
 
-        /* Tactile press effect */
+
         .brutal-btn:hover {
             transform: translate(2px, 2px);
             box-shadow: 2px 2px 0px #94B4C1;
@@ -72,22 +72,25 @@
             color: #213448;
         }
 
-        /* Scroll Animation Classes */
+
         .fade-up {
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
+
         .fade-up.visible {
             opacity: 1;
             transform: translateY(0);
         }
     </style>
 </head>
+
 <body class="bg-bgwarm text-primary font-sans antialiased selection:bg-accent selection:text-primary">
 
     <!-- Navbar -->
-    <nav class="glass-nav sticky top-0 z-50 border-b-2 border-primary px-6 py-4 flex justify-between items-center shadow-sm">
+    <nav
+        class="glass-nav sticky top-0 z-50 border-b-2 border-primary px-6 py-4 flex justify-between items-center shadow-sm">
         <div class="font-black text-xl tracking-tight">
             <i class="bi bi-journal-code mr-2"></i>WebProg<span class="text-secondary">Journal</span>
         </div>
@@ -97,14 +100,17 @@
     </nav>
 
     <main class="max-w-5xl mx-auto px-6 py-12">
-        
+
         <!-- Header Section -->
         <header class="mb-16 fade-up">
             <div class="brutal-card p-8 md:p-12 bg-accent text-primary text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tight">Jurnal Tugas Mata Kuliah Pemrograman Web</h1>
-                <div class="inline-block border-2 border-primary bg-bgwarm px-4 py-2 mt-4 font-bold shadow-[2px_2px_0px_#213448]">
+                <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tight">Jurnal Tugas Mata Kuliah
+                    Pemrograman Web</h1>
+                <div
+                    class="inline-block border-2 border-primary bg-bgwarm px-4 py-2 mt-4 font-bold shadow-[2px_2px_0px_#213448]">
                     <h2 class="text-lg md:text-2xl"><i class="bi bi-person-fill mr-2"></i>Benedict Michael Pepper</h2>
-                    <h3 class="text-md md:text-xl font-semibold"><i class="bi bi-card-heading mr-2"></i>NIM: 312310007</h3>
+                    <h3 class="text-md md:text-xl font-semibold"><i class="bi bi-card-heading mr-2"></i>NIM: 312310007
+                    </h3>
                 </div>
             </div>
         </header>
@@ -112,146 +118,320 @@
         <!-- Lab 02 Section -->
         <section class="mb-12 fade-up">
             <div class="flex items-center gap-4 mb-6">
-                <div class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">02</div>
+                <div
+                    class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">
+                    02</div>
                 <h3 class="text-3xl font-black uppercase">Lab 02: HTML Dasar</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a target="_blank" href="lab-02-html-dasar/html_elements.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-filetype-html text-xl"></i>Task 01. HTML Elements</a>
-                <a target="_blank" href="lab-02-html-dasar/html_attributes.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-filetype-html text-xl"></i>Task 02. HTML Attributes</a>
-                <a target="_blank" href="lab-02-html-dasar/heading.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-type-h1 text-xl"></i>Task 03. Headings</a>
-                <a target="_blank" href="lab-02-html-dasar/paragraph.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-paragraph text-xl"></i>Task 04. Paragraph</a>
-                <a target="_blank" href="lab-02-html-dasar/text_formatting.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-type-bold text-xl"></i>Task 05. Text Formatting</a>
-                <a target="_blank" href="lab-02-html-dasar/comments.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-chat-left-text text-xl"></i>Task 06. Comments</a>
-                <a target="_blank" href="lab-02-html-dasar/color.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-palette text-xl"></i>Task 07. Color</a>
-                <a target="_blank" href="lab-02-html-dasar/hyperlinks.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-link-45deg text-xl"></i>Task 08. Hyperlinks</a>
-                <a target="_blank" href="lab-02-html-dasar/images.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-image text-xl"></i>Task 09. Images</a>
-                <a target="_blank" href="lab-02-html-dasar/tables.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-table text-xl"></i>Task 10. Tables</a>
-                <a target="_blank" href="lab-02-html-dasar/table_colspan.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-layout-three-columns text-xl"></i>Task 11. Table Colspan</a>
-                <a target="_blank" href="lab-02-html-dasar/table_rowspan.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-layout-split text-xl"></i>Task 12. Table Rowspan</a>
-                <a target="_blank" href="lab-02-html-dasar/list_skills.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-list-ul text-xl"></i>Task 13. Lists</a>
-                <a target="_blank" href="lab-02-html-dasar/code.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-code-slash text-xl"></i>Task 14. Code</a>
-                <a target="_blank" href="lab-02-html-dasar/portfolio.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-briefcase text-xl"></i>Task 15. Simple Portfolio</a>
+                <a target="_blank" href="lab-02-html-dasar/html_elements.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-filetype-html text-xl"></i>Task 01. HTML Elements</a>
+                <a target="_blank" href="lab-02-html-dasar/html_attributes.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-filetype-html text-xl"></i>Task 02. HTML Attributes</a>
+                <a target="_blank" href="lab-02-html-dasar/heading.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-type-h1 text-xl"></i>Task 03. Headings</a>
+                <a target="_blank" href="lab-02-html-dasar/paragraph.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-paragraph text-xl"></i>Task 04. Paragraph</a>
+                <a target="_blank" href="lab-02-html-dasar/text_formatting.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-type-bold text-xl"></i>Task 05. Text Formatting</a>
+                <a target="_blank" href="lab-02-html-dasar/comments.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-chat-left-text text-xl"></i>Task 06. Comments</a>
+                <a target="_blank" href="lab-02-html-dasar/color.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-palette text-xl"></i>Task 07. Color</a>
+                <a target="_blank" href="lab-02-html-dasar/hyperlinks.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-link-45deg text-xl"></i>Task 08. Hyperlinks</a>
+                <a target="_blank" href="lab-02-html-dasar/images.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-image text-xl"></i>Task
+                    09. Images</a>
+                <a target="_blank" href="lab-02-html-dasar/tables.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-table text-xl"></i>Task
+                    10. Tables</a>
+                <a target="_blank" href="lab-02-html-dasar/table_colspan.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-layout-three-columns text-xl"></i>Task 11. Table Colspan</a>
+                <a target="_blank" href="lab-02-html-dasar/table_rowspan.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-layout-split text-xl"></i>Task 12. Table Rowspan</a>
+                <a target="_blank" href="lab-02-html-dasar/list_skills.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-list-ul text-xl"></i>Task 13. Lists</a>
+                <a target="_blank" href="lab-02-html-dasar/code.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-code-slash text-xl"></i>Task 14. Code</a>
+                <a target="_blank" href="lab-02-html-dasar/portfolio.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-briefcase text-xl"></i>Task 15. Simple Portfolio</a>
             </div>
         </section>
 
         <!-- Lab 03 Section -->
         <section class="mb-12 fade-up">
             <div class="flex items-center gap-4 mb-6">
-                <div class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">03</div>
+                <div
+                    class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">
+                    03</div>
                 <h3 class="text-3xl font-black uppercase">Lab 03: HTML Form</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a target="_blank" href="lab-03-html-form/task01_form.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-ui-radios text-xl"></i>Task 01. HTML Form</a>
-                <a target="_blank" href="lab-03-html-form/task02_textfield.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-input-cursor-text text-xl"></i>Task 02. Text Fields</a>
-                <a target="_blank" href="lab-03-html-form/task03_radio.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-record-circle text-xl"></i>Task 03. Radio Button</a>
-                <a target="_blank" href="lab-03-html-form/task04_checkbox.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-check-square text-xl"></i>Task 04. Checkboxes</a>
-                <a target="_blank" href="lab-03-html-form/task05_select.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-menu-button-wide text-xl"></i>Task 05. Select</a>
-                <a target="_blank" href="lab-03-html-form/task06_textarea.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-textarea-t text-xl"></i>Task 06. Textarea</a>
-                <a target="_blank" href="lab-03-html-form/task07_password.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-asterisk text-xl"></i>Task 07. Password</a>
-                <a target="_blank" href="lab-03-html-form/task08_color.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-palette-fill text-xl"></i>Task 08. Color Picker</a>
-                <a target="_blank" href="lab-03-html-form/task09_video.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-camera-video text-xl"></i>Task 09. Media Video</a>
-                <a target="_blank" href="lab-03-html-form/task10_audio.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-music-note text-xl"></i>Task 10. Media Audio</a>
-                <a target="_blank" href="lab-03-html-form/task11_youtube.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-youtube text-xl"></i>Task 11. Play Youtube</a>
-                <a target="_blank" href="lab-03-html-form/task12_registration.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-person-plus text-xl"></i>Case Study 1: Registration</a>
-                <a target="_blank" href="lab-03-html-form/task13_employee.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-person-badge text-xl"></i>Case Study 2: User Details</a>
+                <a target="_blank" href="lab-03-html-form/task01_form.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-ui-radios text-xl"></i>Task 01. HTML Form</a>
+                <a target="_blank" href="lab-03-html-form/task02_textfield.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-input-cursor-text text-xl"></i>Task 02. Text Fields</a>
+                <a target="_blank" href="lab-03-html-form/task03_radio.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-record-circle text-xl"></i>Task 03. Radio Button</a>
+                <a target="_blank" href="lab-03-html-form/task04_checkbox.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-check-square text-xl"></i>Task 04. Checkboxes</a>
+                <a target="_blank" href="lab-03-html-form/task05_select.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-menu-button-wide text-xl"></i>Task 05. Select</a>
+                <a target="_blank" href="lab-03-html-form/task06_textarea.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-textarea-t text-xl"></i>Task 06. Textarea</a>
+                <a target="_blank" href="lab-03-html-form/task07_password.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-asterisk text-xl"></i>Task 07. Password</a>
+                <a target="_blank" href="lab-03-html-form/task08_color.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-palette-fill text-xl"></i>Task 08. Color Picker</a>
+                <a target="_blank" href="lab-03-html-form/task09_video.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-camera-video text-xl"></i>Task 09. Media Video</a>
+                <a target="_blank" href="lab-03-html-form/task10_audio.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-music-note text-xl"></i>Task 10. Media Audio</a>
+                <a target="_blank" href="lab-03-html-form/task11_youtube.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-youtube text-xl"></i>Task 11. Play Youtube</a>
+                <a target="_blank" href="lab-03-html-form/task12_registration.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-person-plus text-xl"></i>Case Study 1: Registration</a>
+                <a target="_blank" href="lab-03-html-form/task13_employee.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-person-badge text-xl"></i>Case Study 2: User Details</a>
             </div>
         </section>
 
         <!-- Lab CSS Section -->
         <section class="mb-12 fade-up">
             <div class="flex items-center gap-4 mb-6">
-                <div class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">CSS</div>
+                <div
+                    class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">
+                    CSS</div>
                 <h3 class="text-3xl font-black uppercase">Lab CSS</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a target="_blank" href="lab-css/css_container.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-braces text-xl"></i>CSS in HTML</a>
-                <a target="_blank" href="lab-css/task-1-list-basic.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-list-task text-xl"></i>Task 01. List Basic</a>
-                <a target="_blank" href="lab-css/task-2-list-cards.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-card-list text-xl"></i>Task 02. List Cards</a>
-                <a target="_blank" href="lab-css/task-03-table.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-table text-xl"></i>Task 03. Table</a>
-                <a target="_blank" href="lab-css/task-04-table-monthly-report.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-calendar2-month text-xl"></i>Task 04. Table Monthly Report</a>
-                <a target="_blank" href="lab-css/task-05-table-monthly-report-filter.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-funnel text-xl"></i>Task 05. Table Monthly Report Filter</a>
-                <a target="_blank" href="lab-css/task-06-basic-form-login.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-box-arrow-in-right text-xl"></i>Task 06. Basic Form Login</a>
-                <a target="_blank" href="lab-css/task-07-table-master-action.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-gear text-xl"></i>Task 07. Table Master Actions</a>
-                <a target="_blank" href="lab-css/task-08-card-details.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-card-heading text-xl"></i>Task 08. Card Details</a>
+                <a target="_blank" href="lab-css/css_container.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-braces text-xl"></i>CSS
+                    in HTML</a>
+                <a target="_blank" href="lab-css/task-1-list-basic.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-list-task text-xl"></i>Task 01. List Basic</a>
+                <a target="_blank" href="lab-css/task-2-list-cards.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-card-list text-xl"></i>Task 02. List Cards</a>
+                <a target="_blank" href="lab-css/task-03-table.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-table text-xl"></i>Task
+                    03. Table</a>
+                <a target="_blank" href="lab-css/task-04-table-monthly-report.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-calendar2-month text-xl"></i>Task 04. Table Monthly Report</a>
+                <a target="_blank" href="lab-css/task-05-table-monthly-report-filter.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-funnel text-xl"></i>Task 05. Table Monthly Report Filter</a>
+                <a target="_blank" href="lab-css/task-06-basic-form-login.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-box-arrow-in-right text-xl"></i>Task 06. Basic Form Login</a>
+                <a target="_blank" href="lab-css/task-07-table-master-action.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-gear text-xl"></i>Task
+                    07. Table Master Actions</a>
+                <a target="_blank" href="lab-css/task-08-card-details.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-card-heading text-xl"></i>Task 08. Card Details</a>
             </div>
         </section>
 
         <!-- Lab 04 JS Section -->
         <section class="mb-12 fade-up">
             <div class="flex items-center gap-4 mb-6">
-                <div class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">JS</div>
+                <div
+                    class="h-10 w-10 bg-primary text-bgwarm flex items-center justify-center font-black text-xl border-2 border-primary shadow-[2px_2px_0px_#94B4C1]">
+                    JS</div>
                 <h3 class="text-3xl font-black uppercase">Lab 04 JS</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <a target="_blank" href="lab-04-JS/script1.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-window text-xl"></i>Task 02. Alert HTML</a>
-                <a target="_blank" href="lab-04-JS/script12.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-bell text-xl"></i>Task 03. Alert JS</a>
-                <a target="_blank" href="lab-04-JS/task_04.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-calculator text-xl"></i>Task 04. Operator</a>
-                <a target="_blank" href="lab-04-JS/task_05.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-left-right text-xl"></i>Task 05. Assignment</a>
-                <a target="_blank" href="lab-04-JS/task_06.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrows-collapse text-xl"></i>Task 06. Comparison</a>
-                <a target="_blank" href="lab-04-JS/task_07.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-gear-wide-connected text-xl"></i>Task 07. Operation</a>
-                <a target="_blank" href="lab-04-JS/task_08.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-info-circle text-xl"></i>Task 08. Typeof</a>
-                <a target="_blank" href="lab-04-JS/task_09.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-fonts text-xl"></i>Task 09. String</a>
-                <a target="_blank" href="lab-04-JS/task_10.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-terminal text-xl"></i>Task 10. Console Log</a>
-                <a target="_blank" href="lab-04-JS/task_11.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-check2-circle text-xl"></i>Task 11. Confirm</a>
-                <a target="_blank" href="lab-04-JS/task_12.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-input-cursor-text text-xl"></i>Task 12. Prompt</a>
-                <a target="_blank" href="lab-04-JS/task_13.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-sign-split text-xl"></i>Task 13. If Condition</a>
-                <a target="_blank" href="lab-04-JS/task_14.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-diagram-3 text-xl"></i>Task 14. If Case Study</a>
-                <a target="_blank" href="lab-04-JS/task_15.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-question-lg text-xl"></i>Task 15. Ternary If</a>
-                <a target="_blank" href="lab-04-JS/task_16.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-repeat text-xl"></i>Task 16. While Loop</a>
-                <a target="_blank" href="lab-04-JS/task_17.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-repeat text-xl"></i>Task 17. While Case Study 1</a>
-                <a target="_blank" href="lab-04-JS/task_18.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-repeat text-xl"></i>Task 18. While Case Study 2</a>
-                <a target="_blank" href="lab-04-JS/task_19.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-clockwise text-xl"></i>Task 19. For Loop</a>
-                <a target="_blank" href="lab-04-JS/task_20.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-clockwise text-xl"></i>Task 20. For Case Study 1</a>
-                <a target="_blank" href="lab-04-JS/task_21.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-clockwise text-xl"></i>Task 21. For Case Study 2</a>
-                <a target="_blank" href="lab-04-JS/task_22.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-dice-5 text-xl"></i>Task 22. Random</a>
-                <a target="_blank" href="lab-04-JS/task_23.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-dice-3 text-xl"></i>Task 23. Random Case Study 1</a>
-                <a target="_blank" href="lab-04-JS/task_24.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-dice-6 text-xl"></i>Task 24. Random Case Study 2</a>
-                <a target="_blank" href="lab-04-JS/task_25.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-braces text-xl"></i>Task 25. Function</a>
-                <a target="_blank" href="lab-04-JS/task_26_1.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-code-slash text-xl"></i>Task 26. Function Case Study 1</a>
-                <a target="_blank" href="lab-04-JS/task_26_2.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-sliders text-xl"></i>Task 26. Function Param</a>
-                <a target="_blank" href="lab-04-JS/task_27.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-code-square text-xl"></i>Task 27. Function Case Study 2</a>
-                <a target="_blank" href="lab-04-JS/task_28.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-file-code text-xl"></i>Task 28. Function Expression</a>
-                <a target="_blank" href="lab-04-JS/task_29.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-list-columns text-xl"></i>Task 29. Array</a>
-                <a target="_blank" href="lab-04-JS/task_30.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-collection-play text-xl"></i>Task 30. Array Case Study</a>
-                <a target="_blank" href="lab-04-JS/task_31.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-link text-xl"></i>Task 31. Array Join</a>
-                <a target="_blank" href="lab-04-JS/task_32.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-right-circle text-xl"></i>Task 32. Array ForEach</a>
-                <a target="_blank" href="lab-04-JS/task_33.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-arrow-right-square text-xl"></i>Task 33. Array ForEach CS</a>
-                <a target="_blank" href="lab-04-JS/task_34.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-diagram-3 text-xl"></i>Task 34. Array Map</a>
-                <a target="_blank" href="lab-04-JS/task_35.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-geo-alt text-xl"></i>Task 35. Array Map CS</a>
-                <a target="_blank" href="lab-04-JS/task_36.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-boxes text-xl"></i>Task 36. JS Object</a>
-                <a target="_blank" href="lab-04-JS/task_36_case_study.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-archive text-xl"></i>Task 36. JS Object CS</a>
-                <a target="_blank" href="lab-04-JS/task_37.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-browser-chrome text-xl"></i>Task 37. JS DOM Basic</a>
-                <a target="_blank" href="lab-04-JS/task_38.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-window-sidebar text-xl"></i>Task 38. JS DOM CS</a>
-                <a target="_blank" href="lab-04-JS/task_39.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-palette text-xl"></i>Task 39. Color Flipper</a>
-                <a target="_blank" href="lab-04-JS/task_40.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-chat-quote text-xl"></i>Task 40. Random Quote</a>
-                <a target="_blank" href="lab-04-JS/task_41.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-moon-stars text-xl"></i>Task 41. Dark Mode</a>
-                <a target="_blank" href="lab-04-JS/task_42.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-clock text-xl"></i>Task 42. Digital Clock</a>
-                <a target="_blank" href="lab-04-JS/task_43.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-images text-xl"></i>Task 43. Carousel</a>
-                <a target="_blank" href="lab-04-JS/task_44.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-stopwatch text-xl"></i>Task 44. Stopwatch</a>
-                <a target="_blank" href="lab-04-JS/task_45.html" class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-shield-check text-xl"></i>Task 45. CAPTCHA</a>
+                <a target="_blank" href="lab-04-JS/script1.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-window text-xl"></i>Task 02. Alert HTML</a>
+                <a target="_blank" href="lab-04-JS/script12.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-bell text-xl"></i>Task
+                    03. Alert JS</a>
+                <a target="_blank" href="lab-04-JS/task_04.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-calculator text-xl"></i>Task 04. Operator</a>
+                <a target="_blank" href="lab-04-JS/task_05.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-left-right text-xl"></i>Task 05. Assignment</a>
+                <a target="_blank" href="lab-04-JS/task_06.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrows-collapse text-xl"></i>Task 06. Comparison</a>
+                <a target="_blank" href="lab-04-JS/task_07.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-gear-wide-connected text-xl"></i>Task 07. Operation</a>
+                <a target="_blank" href="lab-04-JS/task_08.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-info-circle text-xl"></i>Task 08. Typeof</a>
+                <a target="_blank" href="lab-04-JS/task_09.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-fonts text-xl"></i>Task
+                    09. String</a>
+                <a target="_blank" href="lab-04-JS/task_10.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-terminal text-xl"></i>Task 10. Console Log</a>
+                <a target="_blank" href="lab-04-JS/task_11.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-check2-circle text-xl"></i>Task 11. Confirm</a>
+                <a target="_blank" href="lab-04-JS/task_12.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-input-cursor-text text-xl"></i>Task 12. Prompt</a>
+                <a target="_blank" href="lab-04-JS/task_13.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-sign-split text-xl"></i>Task 13. If Condition</a>
+                <a target="_blank" href="lab-04-JS/task_14.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-diagram-3 text-xl"></i>Task 14. If Case Study</a>
+                <a target="_blank" href="lab-04-JS/task_15.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-question-lg text-xl"></i>Task 15. Ternary If</a>
+                <a target="_blank" href="lab-04-JS/task_16.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-repeat text-xl"></i>Task 16. While Loop</a>
+                <a target="_blank" href="lab-04-JS/task_17.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-repeat text-xl"></i>Task 17. While Case Study 1</a>
+                <a target="_blank" href="lab-04-JS/task_18.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-repeat text-xl"></i>Task 18. While Case Study 2</a>
+                <a target="_blank" href="lab-04-JS/task_19.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-clockwise text-xl"></i>Task 19. For Loop</a>
+                <a target="_blank" href="lab-04-JS/task_20.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-clockwise text-xl"></i>Task 20. For Case Study 1</a>
+                <a target="_blank" href="lab-04-JS/task_21.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-clockwise text-xl"></i>Task 21. For Case Study 2</a>
+                <a target="_blank" href="lab-04-JS/task_22.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-dice-5 text-xl"></i>Task 22. Random</a>
+                <a target="_blank" href="lab-04-JS/task_23.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-dice-3 text-xl"></i>Task 23. Random Case Study 1</a>
+                <a target="_blank" href="lab-04-JS/task_24.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-dice-6 text-xl"></i>Task 24. Random Case Study 2</a>
+                <a target="_blank" href="lab-04-JS/task_25.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-braces text-xl"></i>Task 25. Function</a>
+                <a target="_blank" href="lab-04-JS/task_26_1.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-code-slash text-xl"></i>Task 26. Function Case Study 1</a>
+                <a target="_blank" href="lab-04-JS/task_26_2.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-sliders text-xl"></i>Task 26. Function Param</a>
+                <a target="_blank" href="lab-04-JS/task_27.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-code-square text-xl"></i>Task 27. Function Case Study 2</a>
+                <a target="_blank" href="lab-04-JS/task_28.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-file-code text-xl"></i>Task 28. Function Expression</a>
+                <a target="_blank" href="lab-04-JS/task_29.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-list-columns text-xl"></i>Task 29. Array</a>
+                <a target="_blank" href="lab-04-JS/task_30.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-collection-play text-xl"></i>Task 30. Array Case Study</a>
+                <a target="_blank" href="lab-04-JS/task_31.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-link text-xl"></i>Task
+                    31. Array Join</a>
+                <a target="_blank" href="lab-04-JS/task_32.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-right-circle text-xl"></i>Task 32. Array ForEach</a>
+                <a target="_blank" href="lab-04-JS/task_33.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-arrow-right-square text-xl"></i>Task 33. Array ForEach CS</a>
+                <a target="_blank" href="lab-04-JS/task_34.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-diagram-3 text-xl"></i>Task 34. Array Map</a>
+                <a target="_blank" href="lab-04-JS/task_35.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-geo-alt text-xl"></i>Task 35. Array Map CS</a>
+                <a target="_blank" href="lab-04-JS/task_36.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-boxes text-xl"></i>Task
+                    36. JS Object</a>
+                <a target="_blank" href="lab-04-JS/task_36_case_study.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-archive text-xl"></i>Task 36. JS Object CS</a>
+                <a target="_blank" href="lab-04-JS/task_37.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-browser-chrome text-xl"></i>Task 37. JS DOM Basic</a>
+                <a target="_blank" href="lab-04-JS/task_38.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-window-sidebar text-xl"></i>Task 38. JS DOM CS</a>
+                <a target="_blank" href="lab-04-JS/task_39.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-palette text-xl"></i>Task 39. Color Flipper</a>
+                <a target="_blank" href="lab-04-JS/task_40.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-chat-quote text-xl"></i>Task 40. Random Quote</a>
+                <a target="_blank" href="lab-04-JS/task_41.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-moon-stars text-xl"></i>Task 41. Dark Mode</a>
+                <a target="_blank" href="lab-04-JS/task_42.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i class="bi bi-clock text-xl"></i>Task
+                    42. Digital Clock</a>
+                <a target="_blank" href="lab-04-JS/task_43.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-images text-xl"></i>Task 43. Carousel</a>
+                <a target="_blank" href="lab-04-JS/task_44.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-stopwatch text-xl"></i>Task 44. Stopwatch</a>
+                <a target="_blank" href="lab-04-JS/task_45.html"
+                    class="brutal-btn p-4 font-semibold flex items-center gap-3"><i
+                        class="bi bi-shield-check text-xl"></i>Task 45. CAPTCHA</a>
             </div>
         </section>
 
     </main>
 
-  
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 0.15 
+                threshold: 0.15
             };
 
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); 
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
@@ -261,4 +441,5 @@
         });
     </script>
 </body>
+
 </html>
