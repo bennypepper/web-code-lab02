@@ -13,10 +13,10 @@
         <hr>
         <?php
         $cars = array (
-            array("Volvo",10,80),
-            array("BMW",20,40),
-            array("Saab",20,10),
-            array("Land Rover",50,35)
+            array("BYD",10,80),
+            array("NIO",20,40),
+            array("XPeng",20,10),
+            array("Li Auto",50,35)
         );
 
         function setColor($sales_percent) {
